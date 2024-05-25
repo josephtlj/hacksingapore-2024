@@ -26,9 +26,9 @@ st.title('Select the station you are getting off')
 #Finding station from dataset
 def filter_stations(query):
     if query:
-        filtered_df = df[df['station_name'].str.contains(query, case=False, na=False)]
+        filtered_df = mrtdata[mrtdata['station_name'].str.contains(query, case=False, na=False)]
     else:
-        filtered_df = df
+        filtered_df = mrtdata
     return filtered_df
 
 #App function
@@ -47,13 +47,6 @@ def main():
 
 
 main()
-
-
-
-
-
-
-
 
 
 
