@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from flask import Flask, request, jsonify
 
 # Profile Button
 st.sidebar.button("Profile", on_click=lambda: st.experimental_rerun())
@@ -54,26 +53,8 @@ main()
 
 
 
-app = Flask(__name__)
 
-# In-memory storage for simplicity
-uploaded_data = []
 
-@app.route('/upload', methods=['POST'])
-def upload():
-    data = request.json
-    stations = search_query
-    if stations:
-        uploaded_data.extend(stations)
-        return jsonify({"message": "Stations uploaded successfully!"}), 200
-    return jsonify({"message": "No stations provided."}), 400
-
-@app.route('/data', methods=['GET'])
-def get_data():
-    return jsonify({"uploaded_data": uploaded_data}), 200
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
 
 
 
