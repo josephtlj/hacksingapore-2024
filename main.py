@@ -29,6 +29,3 @@ chart_data = pd.DataFrame(
 
 st.bar_chart(chart_data)
 st.line_chart(chart_data)
-
-#damn
-st.write('Heading 1')
