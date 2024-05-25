@@ -1,6 +1,6 @@
 # Transport Optimisation
 
-Description of the app ...
+Description of the app ..
 
 ## Demo App
 
