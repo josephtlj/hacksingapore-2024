@@ -1,6 +1,7 @@
 # Transport Optimisation
 
-Description of the app ...
+Making public transportation a better place for the special need by notifiying others within the public transport of their movement plans. This would  make their process of onboarding and their journey more comfortable and efficient 
+
 
 ## Demo App
 
