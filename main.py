@@ -49,39 +49,3 @@ def main():
         st.write("Please enter a search query to find MRT stations.")
 
 main()
-
-
-
-
-
-
-
-
-
-#################
-
-st.write('Headi')
-
-# Import data using CSV
-data = pd.read_csv("data.csv")
-st.write(data)
-
-# Text box
-x = st.text_input("Favourite Movie")
-st.write(f"Your favourite movie is: {x}")
-
-# Button
-is_clicked = st.button("Click Me")
-
-# Chart
-st.write("# My Cool Chart")
-
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=["a", "b", "c"]
-)
-
-st.bar_chart(chart_data)
-st.line_chart(chart_data)
-
-st.write("Headi")
