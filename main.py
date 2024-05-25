@@ -72,8 +72,11 @@ def upload():
 def get_data():
     return jsonify({"uploaded_data": uploaded_data}), 200
 
-if __name__ == "__main__":
+try:
     app.run(host='0.0.0.0', port=5000)
+except BrokenPipeError:
+    pass  # or log the error if needed
+
 
 
 
